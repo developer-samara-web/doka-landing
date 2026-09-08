@@ -1,0 +1,77 @@
+@reference "../../app/globals.css";
+
+.advantages {
+
+	/* Layout */
+	@apply flex items-center justify-center;
+
+	/* Spacing */
+	@apply py-16 px-5 lg:px-0;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Background */
+	@apply bg-gray-100;
+
+}
+
+.advantages__inner {
+
+	/* Layout */
+	@apply container;
+
+}
+
+.advantages__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-4;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.advantages__item {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-6;
+
+}
+
+.advantages__content {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
+
+.advantages__title {
+
+	/* Typography */
+	@apply text-xl font-medium;
+
+}
+
+.advantages__description {
+
+	/* Typography */
+	@apply text-center text-gray-700;
+
+}
+
+.advantages__icon{
+
+	/* Spacing */
+	@apply rounded-3xl p-5 size-18;
+
+	/* Color */
+	@apply bg-white;
+}
