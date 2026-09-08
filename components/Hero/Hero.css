@@ -1,0 +1,94 @@
+@reference "../../app/globals.css";
+
+.hero {
+
+	/* Layout */
+	@apply flex items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+}
+
+.hero__inner {
+
+	/* Layout */
+	@apply container flex flex-col-reverse lg:grid lg:grid-cols-[3fr_5fr] items-center;
+
+	/* Spacing */
+	@apply gap-10 px-5 lg:px-0 py-10 lg:py-32;
+
+}
+
+.hero__col {
+
+	/* Layout */
+	@apply flex flex-col items-start;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.hero__row {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.hero__badge {
+
+	/* Typography */
+	@apply text-xs font-medium uppercase tracking-widest text-center lg:text-left;
+
+}
+
+.hero__title {
+
+	/* Typography */
+	@apply text-4xl lg:text-5xl font-medium text-center lg:text-left;
+
+}
+
+.hero__description {
+
+	/* Typography */
+	@apply font-normal text-gray-700 text-center lg:text-left;
+
+}
+
+.hero__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 px-10 py-5 w-full lg:w-auto;
+
+	/* Typography */
+	@apply text-xs font-medium uppercase;
+
+	/* Background */
+	@apply bg-gray-900;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Color */
+	@apply text-gray-50;
+
+	/* Interaction */
+	@apply hover:bg-[#f7b60a] hover:text-[#563b00];
+
+}
+
+.hero__icon {
+
+	/* Sizing */
+	@apply size-4;
+
+}
