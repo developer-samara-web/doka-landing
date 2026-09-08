@@ -1,0 +1,110 @@
+@reference "../../app/globals.css";
+
+.shop {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+}
+
+.shop__inner {
+
+	/* Layout */
+	@apply container flex flex-col overflow-hidden;
+
+	/* Spacing */
+	@apply gap-10 py-16 px-5 lg:px-0;
+
+}
+
+.shop__menu {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
+
+.shop__menu-item {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-2 px-6 py-3;
+
+	/* Typography */
+	@apply text-sm;
+
+	/* Background */
+	@apply bg-gray-200;
+
+	/* Border */
+	@apply rounded-full;
+
+	/* Color */
+	@apply text-gray-700;
+
+	/* Interaction */
+	@apply cursor-pointer hover:bg-gray-900 hover:text-gray-200;
+
+}
+
+.shop__menu-item--active{
+
+	/* Color */
+	@apply !bg-gray-900 !text-gray-200;
+	
+}
+
+.shop__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-5;
+
+	/* Spacing */
+	@apply gap-10 py-10;
+
+}
+
+.shop__item {
+
+	/* Layout */
+	@apply flex flex-col items-center lg:items-start;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
+
+.shop__image {
+
+	/* Spacing */
+	@apply p-10;
+
+	/* Background */
+	@apply bg-gray-100;
+
+	/* Interaction */
+	@apply cursor-pointer hover:bg-gray-200;
+
+}
+
+.shop__description {
+
+	/* Typography */
+	@apply text-sm text-gray-600 text-center lg:text-left max-w-[80%] lg:max-w-max;
+
+}
+
+.shop__price {
+
+	/* Typography */
+	@apply text-base font-medium;
+
+}
