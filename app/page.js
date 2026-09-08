@@ -5,6 +5,7 @@ import Advantages from "@/components/Advantages/Advantages";
 import Shop from "@/components/Shop/Shop";
 import Partners from "@/components/Partners/Partners";
 import About from "@/components/About/About";
+import Reviews from "@/components/Reviews/Reviews";
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 			<Shop />
 			<Partners />
 			<About />
+			<Reviews />
 		</main>
 	);
 }

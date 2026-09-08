@@ -1,0 +1,143 @@
+@reference "../../app/globals.css";
+
+.reviews {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+}
+
+.reviews__inner {
+
+	/* Layout */
+	@apply container flex flex-col;
+
+	/* Spacing */
+	@apply gap-16 py-16 px-5 lg:px-0;
+
+}
+
+.reviews__items {
+
+	/* Layout */
+	@apply grid lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.reviews__item {
+
+	/* Spacing */
+	@apply p-8;
+
+	/* Border */
+	@apply border border-gray-200;
+
+}
+
+.reviews__item-header {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-between;
+
+	/* Spacing */
+	@apply pb-8;
+
+	/* Border */
+	@apply border-b border-gray-200;
+
+}
+
+.reviews__user {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-4;
+
+}
+
+.reviews__avatar {
+
+	/* Border */
+	@apply rounded-2xl;
+
+}
+
+.reviews__personal {
+
+	/* Layout */
+	@apply flex flex-col;
+
+}
+
+.reviews__name {
+
+	/* Typography */
+	@apply text-base font-medium;
+
+}
+
+.reviews__city {
+
+	/* Typography */
+	@apply text-xs text-gray-600;
+
+}
+
+.reviews__icon {
+
+	/* Sizing */
+	@apply size-10;
+
+}
+
+.review__content {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2 pt-8;
+
+}
+
+.review__stars {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-1;
+
+}
+
+.reviews__text {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.reviews__title {
+
+	/* Typography */
+	@apply text-base font-medium;
+
+}
+
+.reviews__description {
+
+	/* Typography */
+	@apply text-sm text-gray-600;
+
+}
