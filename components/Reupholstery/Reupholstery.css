@@ -1,0 +1,76 @@
+@reference "../../app/globals.css";
+
+.reupholstery {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+}
+
+.reupholstery__inner {
+
+	/* Layout */
+	@apply container flex flex-col-reverse gap-5 lg:gap-0 lg:grid lg:grid-cols-[3fr_4fr] items-center justify-between;
+
+	/* Spacing */
+	@apply mb-16 px-5 lg:px-16 py-5;
+
+	/* Background */
+	@apply bg-gray-100;
+
+}
+
+.reupholstery__description {
+
+	/* Typography */
+	@apply text-left text-base text-gray-600;
+
+	/* Sizing */
+	@apply lg:max-w-[70%];
+
+}
+
+.reupholstery__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 px-10 py-5 mt-5 w-full lg:w-auto;
+
+	/* Typography */
+	@apply text-xs font-medium uppercase;
+
+	/* Background */
+	@apply bg-gray-900;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Color */
+	@apply text-gray-50;
+
+	/* Interaction */
+	@apply hover:bg-[#f7b60a] hover:text-[#563b00];
+
+}
+
+.reupholstery__left {
+
+	/* Layout */
+	@apply flex flex-col items-start;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.reupholstery__right {
+
+	/* Layout */
+	@apply flex items-center justify-end;
+
+}
