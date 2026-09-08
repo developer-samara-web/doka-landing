@@ -1,0 +1,41 @@
+@reference "../../app/globals.css";
+
+.about {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Background */
+	@apply bg-gray-100;
+
+}
+
+.about__inner {
+
+	/* Layout */
+	@apply container flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 py-16 px-5 lg:px-0;
+
+}
+
+.about__title {
+
+	/* Typography */
+	@apply !normal-case lg:!text-4xl;
+
+}
+
+.about__description {
+
+	/* Typography */
+	@apply text-center text-base text-gray-600;
+
+	/* Sizing */
+	@apply lg:max-w-[70%];
+
+}
