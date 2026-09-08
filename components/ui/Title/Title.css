@@ -1,0 +1,72 @@
+@reference "../../../app/globals.css";
+
+.section__heading {
+
+	/* Layout */
+	@apply flex flex-col lg:flex-row items-center;
+
+	/* Spacing */
+	@apply gap-3 lg:gap-6;
+
+}
+
+.section__title {
+
+	/* Typography */
+	@apply text-center text-2xl font-medium uppercase;
+
+	/* Sizing */
+	@apply lg:max-w-[70%];
+
+}
+
+.section__line {
+
+	/* Sizing */
+	@apply h-px w-25;
+
+	/* Background */
+	@apply bg-gray-900;
+
+}
+
+.section__line--center {
+
+	/* Layout */
+	@apply hidden;
+
+}
+
+.section__badge {
+
+	/* Typography */
+	@apply text-xs font-medium uppercase tracking-widest text-gray-600;
+
+}
+
+.section__heading--center {
+
+	/* Layout */
+	@apply flex-col-reverse;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.section__heading--left {
+
+	/* Layout */
+	@apply w-full flex-col-reverse items-start;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.section__line--left {
+
+	/* Layout */
+	@apply hidden;
+
+}
