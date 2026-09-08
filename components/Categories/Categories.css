@@ -1,0 +1,130 @@
+@reference "../../app/globals.css";
+
+.categories__inner {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-3 pt-5;
+
+}
+
+.categories__item {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply px-2 py-2;
+
+	/* Typography */
+	@apply text-sm font-medium;
+
+	/* Background */
+	@apply bg-gray-100;
+
+	/* Border */
+	@apply rounded-full;
+
+	/* Interaction */
+	@apply cursor-pointer hover:bg-gray-200;
+
+}
+
+.categories__icon {
+
+	/* Sizing */
+	@apply size-10;
+
+	/* Spacing */
+	@apply p-3;
+
+	/* Background */
+	@apply bg-white;
+
+	/* Border */
+	@apply rounded-full;
+
+}
+
+.categories__name {
+
+	/* Spacing */
+	@apply px-5;
+
+}
+
+@media (max-width: 768px) {
+	.categories {
+		@apply relative w-full overflow-hidden;
+	}
+
+	.categories__inner {
+		@apply flex flex-nowrap gap-3 pt-4 px-4;
+		
+		width: 100%;
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+		/* Скрываем scrollbar */
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		/* Для iOS */
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.categories__inner::-webkit-scrollbar {
+		display: none;
+	}
+
+	.categories__inner li {
+		flex: 0 0 auto;
+	}
+
+	.categories__item {
+		@apply flex flex-row items-center;
+		@apply px-2 py-2;
+		@apply whitespace-nowrap;
+	}
+
+	.categories__icon {
+		@apply size-9 p-2.5;
+	}
+
+	.categories__name {
+		@apply px-4;
+	}
+
+	.categories::before,
+	.categories::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 32px;
+		z-index: 10;
+		pointer-events: none;
+	}
+
+	.categories::before {
+		left: 0;
+
+		background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 1),
+			rgba(255, 255, 255, 0)
+		);
+	}
+
+	.categories::after {
+		right: 0;
+
+		background: linear-gradient(
+			to left,
+			rgba(255, 255, 255, 1),
+			rgba(255, 255, 255, 0)
+		);
+	}
+}
