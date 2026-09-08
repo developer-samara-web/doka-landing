@@ -1,0 +1,56 @@
+@reference "../../app/globals.css";
+
+.partners {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Background */
+	@apply bg-gray-100;
+
+}
+
+.partners__inner {
+
+	/* Layout */
+	@apply container;
+
+	/* Spacing */
+	@apply py-16 px-5 lg:px-0;
+
+}
+
+.partners__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-4;
+
+	/* Spacing */
+	@apply gap-10 mt-16;
+
+}
+
+.partners__item {
+
+	/* Layout */
+	@apply flex items-center justify-center;
+
+	/* Spacing */
+	@apply p-8;
+
+	/* Background */
+	@apply bg-white;
+
+	/* Border */
+	@apply rounded-2xl border border-gray-100;
+
+	/* Effects */
+	@apply grayscale-100 transition-all duration-300;
+
+	/* Interaction */
+	@apply cursor-pointer hover:grayscale-0;
+
+}
