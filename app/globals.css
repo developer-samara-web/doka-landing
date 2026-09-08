@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+html {
+	font-family: "Cera Pro";
+	scroll-behavior: smooth;
+}
+
+:focus-visible {
+	outline: 2px solid #f7b60a;
+	outline-offset: 3px;
+}
+
+.wrapper {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Color */
+	@apply bg-slate-50;
+
+}
