@@ -1,0 +1,166 @@
+@reference "../../app/globals.css";
+
+.footer {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Background */
+	@apply bg-gray-100;
+
+}
+
+.footer__inner {
+
+	/* Layout */
+	@apply container flex flex-col;
+
+	/* Spacing */
+	@apply gap-10 px-5 py-16;
+
+	/* Responsive */
+	@apply lg:px-0;
+
+}
+
+.footer__top {
+
+	/* Layout */
+	@apply grid justify-between;
+
+	/* Responsive */
+	@apply lg:grid-cols-[2fr_4fr];
+
+}
+
+.footer__col {
+
+	/* Layout */
+	@apply flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-5;
+
+	/* Responsive */
+	@apply lg:items-start;
+
+}
+
+.footer__description {
+
+	/* Typography */
+	@apply text-center text-sm text-gray-600;
+
+	/* Responsive */
+	@apply lg:max-w-[70%] lg:text-left;
+
+}
+
+.footer__navs {
+
+	/* Layout */
+	@apply grid grid-cols-1;
+
+	/* Spacing */
+	@apply gap-10 py-10;
+
+	/* Responsive */
+	@apply lg:grid-cols-3 lg:gap-0 lg:py-0;
+
+}
+
+.footer__nav {
+
+	/* Layout */
+	@apply flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-5;
+
+	/* Responsive */
+	@apply lg:items-end;
+
+}
+
+.footer__name {
+
+	/* Typography */
+	@apply text-sm font-medium uppercase;
+
+}
+
+.footer__links {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2;
+
+	/* Typography */
+	@apply text-center text-sm normal-case text-gray-600;
+
+	/* Responsive */
+	@apply lg:text-right;
+
+}
+
+.footer__links--contacts{
+
+	/* Layout */
+	@apply flex flex-col !gap-3;
+	
+}
+
+.footer__link {
+
+	/* Interaction */
+	@apply hover:text-gray-900;
+
+}
+
+.footer__bottom {
+
+	/* Layout */
+	@apply flex flex-col-reverse items-center justify-between;
+
+	/* Spacing */
+	@apply gap-3;
+
+	/* Responsive */
+	@apply lg:flex-row lg:gap-0;
+
+}
+
+.footer__bottom-inner {
+
+	/* Layout */
+	@apply flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-1;
+
+	/* Responsive */
+	@apply lg:items-start;
+
+}
+
+.footer__policy {
+
+	/* Typography */
+	@apply text-xs;
+
+	/* Border */
+	@apply border-b border-dashed border-gray-900;
+
+}
+
+.footer__copyright {
+
+	/* Typography */
+	@apply text-sm font-medium;
+
+}
