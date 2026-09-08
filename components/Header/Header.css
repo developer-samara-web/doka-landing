@@ -1,0 +1,239 @@
+@reference "../../app/globals.css";
+
+.header {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-between;
+
+	/* Sizing */
+	@apply w-full;
+
+}
+
+.header__inner {
+
+	/* Layout */
+	@apply container grid grid-cols-[2fr_3fr_2fr] items-center justify-between;
+
+	/* Spacing */
+	@apply py-5;
+
+}
+
+.header__navbar {
+
+	/* Layout */
+	@apply flex items-center justify-center;
+
+}
+
+.header__navs {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-8;
+
+}
+
+.header__nav {
+
+	/* Typography */
+	@apply text-xs font-medium uppercase tracking-wider text-gray-700;
+
+	/* Animation */
+	@apply transition-colors;
+
+	/* Interaction */
+	@apply hover:text-gray-900;
+
+}
+
+.header__actions {
+
+	/* Layout */
+	@apply flex items-center justify-end;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.header__panel {
+
+	/* Layout */
+	@apply flex flex-row justify-end;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.header__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 p-3;
+
+	/* Typography */
+	@apply text-sm font-medium;
+
+	/* Background */
+	@apply bg-slate-100;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Color */
+	@apply text-slate-900;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+	/* Animation */
+	@apply transition-colors;
+
+	/* Responsive */
+	@apply hover:bg-[#f7b60a] hover:text-[#563b00];
+
+}
+
+.header__icon {
+
+	/* Sizing */
+	@apply size-5;
+
+	/* Color */
+	@apply text-inherit;
+
+}
+
+.header__burger {
+
+	/* Layout */
+	@apply hidden items-center justify-center;
+
+	/* Spacing */
+	@apply p-3;
+
+	/* Background */
+	@apply bg-slate-100;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Color */
+	@apply text-slate-900;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+@media (max-width: 768px) {
+
+	.header {
+
+		/* Layout */
+		@apply relative;
+
+	}
+
+	.header__inner {
+
+		/* Layout */
+		@apply relative grid grid-cols-[1fr_auto];
+
+		/* Spacing */
+		@apply gap-4 px-4 py-4;
+
+	}
+
+	.header__logo {
+
+		/* Sizing */
+		@apply h-auto w-[140px];
+
+	}
+
+	.header__actions {
+
+		/* Layout */
+		@apply relative z-50;
+
+	}
+
+	.header__panel {
+
+		/* Layout */
+		@apply flex;
+
+		/* Spacing */
+		@apply gap-2;
+
+	}
+
+	.header__button {
+
+		/* Spacing */
+		@apply rounded-xl p-2.5;
+
+	}
+
+	.header__burger {
+
+		/* Layout */
+		@apply flex;
+
+	}
+
+	.header__navbar {
+
+		/* Layout */
+		@apply fixed inset-0 z-40 flex items-center justify-center;
+
+		/* Background */
+		@apply bg-white;
+
+		/* Animation */
+		@apply transition-all duration-300;
+
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-20px);
+		transition:
+			opacity 0.25s ease,
+			visibility 0.25s ease,
+			transform 0.25s ease;
+
+	}
+
+	.header__navbar--open {
+
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+
+	}
+
+	.header__navs {
+
+		/* Layout */
+		@apply flex flex-col items-center;
+
+		/* Spacing */
+		@apply gap-5;
+
+	}
+
+	.header__nav {
+
+		/* Typography */
+		@apply text-base font-medium tracking-wider;
+
+	}
+
+}
